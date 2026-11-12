@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Etsy Profit Analyzer – connection</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 20px; color: #1f2328; line-height: 1.5; }
+  h1 { font-size: 1.4rem; }
+  .box { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 8px; padding: 12px; word-break: break-all; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9rem; }
+  button { margin-top: 12px; padding: 8px 16px; border-radius: 6px; border: 1px solid #1f883d; background: #1f883d; color: #fff; font-size: 1rem; cursor: pointer; }
+  .error { color: #cf222e; }
+  small { color: #59636e; }
+</style>
+</head>
+<body>
+<h1 id="title">Almost done</h1>
+<p id="message">Copy the address below and paste it into the <code>etsy-profit-connect</code> window that asked for it.</p>
+<div class="box" id="url"></div>
+<button id="copy" type="button">Copy address</button>
+<p><small>This page runs entirely in your browser. It loads no other files and sends nothing anywhere. The code in the address works once and expires quickly. Close this tab after copying.</small></p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const box = document.getElementById("url");
+  const button = document.getElementById("copy");
+  box.textContent = window.location.href;
+  if (params.has("error")) {
+    document.getElementById("title").textContent = "Access was not granted";
+    const message = document.getElementById("message");
+    message.className = "error";
+    message.textContent = params.get("error_description") || params.get("error");
+  } else if (!params.has("code")) {
+    document.getElementById("message").textContent = "No authorization code found. Start the connection again from etsy-profit-connect.";
+    button.hidden = true;
+  }
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      button.textContent = "Copied";
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNodeContents(box);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      button.textContent = "Selected – press Ctrl+C";
+    }
+  });
+</script>
+</body>
+</html>
