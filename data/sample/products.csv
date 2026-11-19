@@ -1,0 +1,9 @@
+sku,product,category,unit_cost,price,starting_stock,reorder_at
+FW-001,Lavender Soy Candle 8oz,Candles,4.10,22,40,8
+FW-002,Cedar & Smoke Candle 8oz,Candles,4.30,24,20,8
+FW-003,Citrus Grove Candle 12oz,Candles,5.60,30,25,6
+FW-004,Wax Melt Sampler (6 pack),Wax melts,2.20,14,50,10
+FW-005,Reed Diffuser - Fig,Diffusers,6.80,34,20,5
+FW-006,Candle Gift Box (3 mini),Gift sets,9.50,48,6,4
+FW-007,Matchbox - Botanical,Accessories,0.90,6,60,15
+FW-008,Wick Trimmer - Brass,Accessories,3.40,16,3,5

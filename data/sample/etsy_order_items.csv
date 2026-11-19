@@ -1,0 +1,5 @@
+Sale Date,Item Name,Buyer,Quantity,Price,Coupon Code,Coupon Details,Discount Amount,Shipping Discount,Order Shipping,Order Sales Tax,Item Total,Currency,Transaction ID,Listing ID,Date Paid,Date Shipped,Ship Name,Ship Address1,Ship Address2,Ship City,Ship State,Ship Zipcode,Ship Country,Order ID,Variations,Order Type,Listings Type,Payment Type,InPerson Discount,InPerson Location,VAT Paid by Buyer,SKU
+11/01/26,Lavender Soy Candle 8oz,sample_buyer,1,22,,,0,0,4.5,0,22,USD,9001,,,,,,,,,,United States,ET-2001,,online,listing,online_cc,,,,FW-001
+11/01/26,Matchbox - Botanical,sample_buyer,2,6,,,0,0,4.5,0,12,USD,9002,,,,,,,,,,United States,ET-2001,,online,listing,online_cc,,,,FW-007
+11/02/26,Candle Gift Box (3 mini),sample_buyer,1,48,,,0,0,0,0,48,USD,9003,,,,,,,,,,United States,ET-1047,,online,listing,online_cc,,,,FW-006
+11/02/26,Beeswax Pillar Candle,sample_buyer,1,28,,,0,0,5.5,0,28,USD,9004,,,,,,,,,,United States,ET-2002,,online,listing,online_cc,,,,FW-009

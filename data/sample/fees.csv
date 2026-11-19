@@ -1,0 +1,4 @@
+channel,pct_of_order_total,fixed_per_order,per_item_sold,notes,fees_returned_on_refund
+Etsy,0.095,0.25,0.20,"US example: 6.5% transaction + 3% processing + $0.25, plus $0.20 listing renewal per item sold. Offsite Ads not included. Check Etsy's current fee page.",yes
+Shopify,0.029,0.30,0,Example rate only. Use your Shopify Payments plan rate.,no
+Instagram,0,0,0,Direct/DM sales. Add your payment app fee if you use one.,no

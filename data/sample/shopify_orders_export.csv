@@ -1,0 +1,7 @@
+Name,Email,Financial Status,Paid at,Fulfillment Status,Currency,Subtotal,Shipping,Taxes,Total,Discount Code,Discount Amount,Shipping Method,Created at,Lineitem quantity,Lineitem name,Lineitem price,Lineitem sku,Lineitem requires shipping,Lineitem fulfillment status,Refunded Amount,Canceled at
+#1050,buyer@example.com,paid,2026-11-04 10:12:00 -0500,fulfilled,USD,58.00,5.50,0.00,58.50,FALL5,5.00,Standard,2026-11-04 10:12:00 -0500,1,Citrus Grove Candle 12oz,30.00,FW-003,true,fulfilled,0.00,
+#1050,,,,,,,,,,,,,,2,Wax Melt Sampler (6 pack),14.00,FW-004,true,fulfilled,,
+#1051,buyer2@example.com,partially_refunded,2026-11-05 09:00:00 -0500,fulfilled,USD,48.00,0.00,0.00,48.00,,0.00,Free,2026-11-05 09:00:00 -0500,1,Candle Gift Box (3 mini),48.00,FW-006,true,fulfilled,10.00,
+#1052,buyer3@example.com,refunded,2026-11-05 11:00:00 -0500,,USD,22.00,4.50,0.00,26.50,,0.00,Standard,2026-11-05 11:00:00 -0500,1,Lavender Soy Candle 8oz,22.00,FW-001,true,,26.50,
+#1053,buyer4@example.com,paid,2026-11-06 08:30:00 -0500,,USD,24.00,4.50,0.00,28.50,,0.00,Standard,2026-11-06 08:30:00 -0500,1,Cedar & Smoke Candle 8oz,24.00,FW-002,true,,0.00,2026-11-06 09:00:00 -0500
+#1054,buyer5@example.com,paid,2026-11-07 12:00:00 -0500,,USD,18.00,0.00,0.00,18.00,,0.00,Free,2026-11-07 12:00:00 -0500,1,Beeswax Pillar Candle,18.00,FW-009,true,,0.00,
